@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>First electron app</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="jumbotron">
+        <h1>My App</h1>
+        <form>
+          <input type="text" placeholder="Enter something">
+          <input type="submit" value="Go!">
+        </form>
+      </div>
+    </div>
+  </body>
+  <script>
+    require('./renderer.js');
+  </script>
+</html>
