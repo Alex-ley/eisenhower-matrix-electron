@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   </head>
   <body class="bg-dark">
-    <div class="container-full-bg">
       <div class="jumbotron">
         <h1>Eisenhower Matrix Task Tracker App</h1>
         <form>
@@ -16,19 +15,20 @@
         </form>
         <hr>
         <div>
-            <div>
-                <input type="text" placeholder="Please select your file" id="actual-file" disabled="disabled"/>
-                <input type="button" value="Choose a file" id="select-file"/>
-            </div>
-            <br><br>
+            <input type="text" placeholder="Please select your file" id="actual-file" disabled="disabled"/>
+            <input type="button" value="Choose a file" id="select-file"/>
+        </div>
+          <br><br>
+
             <label for="content-editor">Preview your tasks as text</label><br>
-            <textarea id="content-editor" rows="5"></textarea><br><br>
+            <textarea class="w-100 p-3" id="content-editor" rows="5"></textarea><br><br>
+
+          <br>
             <input type="button" id="save-changes" value="Save changes"/>
             <input type="button" id="delete-file" value="Delete file"/>
-        </div>
+
         <hr>
       </div>
-    </div>
   </body>
   <script>
     require('./renderer.js');
